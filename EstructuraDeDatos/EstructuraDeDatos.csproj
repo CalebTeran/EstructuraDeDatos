@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{83BBFC68-8F9C-4453-846C-DFCA9247FBA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EstructuraDeDatos</RootNamespace>
+    <AssemblyName>EstructuraDeDatos</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="determinante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="determinante.Designer.cs">
+      <DependentUpon>determinante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstructuraAbstracta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstructuraAbstracta.Designer.cs">
+      <DependentUpon>EstructuraAbstracta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iniciar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iniciar.Designer.cs">
+      <DependentUpon>iniciar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="matices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matices.Designer.cs">
+      <DependentUpon>matices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="matricesInversas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matricesInversas.Designer.cs">
+      <DependentUpon>matricesInversas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="matricesTranspuestas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matricesTranspuestas.Designer.cs">
+      <DependentUpon>matricesTranspuestas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memorama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memorama.Designer.cs">
+      <DependentUpon>Memorama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="notacionPostfija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="notacionPostfija.Designer.cs">
+      <DependentUpon>notacionPostfija.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PilaGenerica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PilaGenerica.Designer.cs">
+      <DependentUpon>PilaGenerica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Recursiviad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recursiviad.Designer.cs">
+      <DependentUpon>Recursiviad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TorresDeHanoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TorresDeHanoi.Designer.cs">
+      <DependentUpon>TorresDeHanoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="triangular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="triangular.Designer.cs">
+      <DependentUpon>triangular.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EstructuraAbstracta.resx">
+      <DependentUpon>EstructuraAbstracta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iniciar.resx">
+      <DependentUpon>iniciar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="matices.resx">
+      <DependentUpon>matices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="matricesInversas.resx">
+      <DependentUpon>matricesInversas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="matricesTranspuestas.resx">
+      <DependentUpon>matricesTranspuestas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memorama.resx">
+      <DependentUpon>Memorama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="notacionPostfija.resx">
+      <DependentUpon>notacionPostfija.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PilaGenerica.resx">
+      <DependentUpon>PilaGenerica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursiviad.resx">
+      <DependentUpon>Recursiviad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TorresDeHanoi.resx">
+      <DependentUpon>TorresDeHanoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="triangular.resx">
+      <DependentUpon>triangular.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1_Ut55XNszCQPxCG9qaEQfAw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\dorso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Victoria.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\wallpaper.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
